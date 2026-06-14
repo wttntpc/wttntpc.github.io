@@ -380,6 +380,7 @@ header {
   position: relative;
   padding: 4px;
   background: linear-gradient(135deg, var(--primary), var(--secondary));
+  overflow: hidden;
 }
 
 .profile-img {
