@@ -6,7 +6,7 @@
   <title>Ting-Ting Wu (吳亭葶) | Cognitive Neuroscience & Kinesiology Portfolio</title>
   <meta name="description" content="Personal Portfolio of Ting-Ting Wu (吳亭葶) - Ph.D. Student at Institute of Cognitive Neuroscience, National Central University. Intersecting Cognitive Neuroscience, Kinesiology, and Athletic Training.">
   <meta name="keywords" content="Ting-Ting Wu, 吳亭葶, Cognitive Neuroscience, Kinesiology, Athletic Trainer, National Central University, Sports Medicine">
-  <link rel="stylesheet" href="style.css?v=1.0.2">
+  <link rel="stylesheet" href="style.css?v=1.0.3">
   <!-- FontAwesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -66,6 +66,29 @@
           <span class="zh">連結<strong>認知神經科學</strong>、<strong>運動科學</strong>與<strong>運動傷害防護</strong>，致力於探討身體活動與健身運動對大腦與情緒的神經調控機制，進而改善全年齡層與特殊族群的身心大腦健康。</span>
           <span class="en">Bridging the gap between <strong>Cognitive Neuroscience</strong>, <strong>Kinesiology</strong>, and <strong>Athletic Training</strong>. I investigate the neural mechanisms of physical activity and exercise on brain and emotion to optimize mind and brain health for all age groups and special populations.</span>
         </p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">23+</span>
+            <span class="stat-label">
+              <span class="zh">學術論文與發表</span>
+              <span class="en">Pubs & Presentations</span>
+            </span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">
+              <span class="zh">專業證照與研習</span>
+              <span class="en">Licenses & Training</span>
+            </span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">4+</span>
+            <span class="stat-label">
+              <span class="zh">參與國科會/醫院計畫</span>
+              <span class="en">Grant Projects</span>
+            </span>
+          </div>
+        </div>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary">
             <span class="zh">聯絡我 <i class="fa-solid fa-paper-plane"></i></span>
@@ -222,193 +245,28 @@
 
       <div class="timeline-toggle-container">
         <div class="toggle-group">
-          <button id="toggle-exp" class="toggle-item active">
-            <span class="zh">相關經歷</span>
-            <span class="en">Experience</span>
-          </button>
-          <button id="toggle-edu" class="toggle-item">
+          <button class="toggle-item active" data-target="view-education">
             <span class="zh">教育背景</span>
             <span class="en">Education</span>
+          </button>
+          <button class="toggle-item" data-target="view-projects">
+            <span class="zh">參與計畫</span>
+            <span class="en">Research Projects</span>
+          </button>
+          <button class="toggle-item" data-target="view-teaching">
+            <span class="zh">教學服務</span>
+            <span class="en">Teaching</span>
+          </button>
+          <button class="toggle-item" data-target="view-practice">
+            <span class="zh">專業實務</span>
+            <span class="en">Practice & Service</span>
           </button>
         </div>
       </div>
 
       <div class="timeline-wrap">
-        <!-- Experience Timeline View -->
-        <div id="view-experience" class="timeline-view active">
-          
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="glass-card timeline-card">
-              <div class="timeline-meta">
-                <span class="timeline-time">2025 - 2026</span>
-                <span class="timeline-tag"><span class="zh">學術研究</span><span class="en">Research</span></span>
-              </div>
-              <h3>
-                <span class="zh">研究助理</span>
-                <span class="en">Research Assistant</span>
-              </h3>
-              <p class="timeline-subtitle">
-                <span class="zh">台北慈濟醫院研究計畫</span>
-                <span class="en">Taipei Tzu Chi Hospital Research Projects</span>
-              </p>
-              <div class="timeline-desc">
-                <ul class="zh">
-                  <li>負責協助臨床醫療與健康促進研究計畫之執行。</li>
-                  <li>收集臨床生理及認知數據，協助跨學科數據統合分析。</li>
-                </ul>
-                <ul class="en">
-                  <li>Assisted in clinical healthcare and health promotion research projects.</li>
-                  <li>Responsible for clinical data collection, processing, and multidisciplinary coordination.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="glass-card timeline-card">
-              <div class="timeline-meta">
-                <span class="timeline-time">2022 - 2025</span>
-                <span class="timeline-tag"><span class="zh">國家專案</span><span class="en">National Projects</span></span>
-              </div>
-              <h3>
-                <span class="zh">研究助理</span>
-                <span class="en">Research Assistant</span>
-              </h3>
-              <p class="timeline-subtitle">
-                <span class="zh">國科會 (NSTC) 研究專案（清華大學 陳豐慈教授、姚在府教授實驗室）</span>
-                <span class="en">National Science and Technology Council (NSTC) Projects, Taiwan</span>
-              </p>
-              <div class="timeline-desc">
-                <ul class="zh">
-                  <li>參與多項國科會專案，主題涵蓋「阻力健身運動對高齡者執行功能之影響」。</li>
-                  <li>主導受試者招募、認知測量系統架設、生理數據採集與資料庫維護。</li>
-                </ul>
-                <ul class="en">
-                  <li>Participated in several national research grants on resistance exercise, hemodynamic changes, and executive functions in elderly and clinical populations.</li>
-                  <li>Spearheaded participant recruitment, cognitive battery setup, physiological assessment, and dataset preparation.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="glass-card timeline-card">
-              <div class="timeline-meta">
-                <span class="timeline-time">2024 - 2026</span>
-                <span class="timeline-tag"><span class="zh">學術編輯</span><span class="en">Academic Editorial</span></span>
-              </div>
-              <h3>
-                <span class="zh">編輯助理</span>
-                <span class="en">Editorial Assistant</span>
-              </h3>
-              <p class="timeline-subtitle">
-                <span class="zh">《運動表現期刊》(Journal of Sports Performance)</span>
-                <span class="en">Journal of Sports Performance</span>
-              </p>
-              <div class="timeline-desc">
-                <ul class="zh">
-                  <li>協助期刊稿件之初審、送審與同儕審查流程管理。</li>
-                  <li>編輯排版與作者/審查委員間之學術溝通。</li>
-                </ul>
-                <ul class="en">
-                  <li>Managed peer-review processes, manuscript formatting check, and coordinated reviewer assignments.</li>
-                  <li>Facilitated clear communication between journal editors, authors, and international reviewers.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="glass-card timeline-card">
-              <div class="timeline-meta">
-                <span class="timeline-time">2024 - 2025</span>
-                <span class="timeline-tag"><span class="zh">教學服務</span><span class="en">Teaching</span></span>
-              </div>
-              <h3>
-                <span class="zh">課程助教 (TA)</span>
-                <span class="en">Teaching Assistant</span>
-              </h3>
-              <p class="timeline-subtitle">
-                <span class="zh">國立清華大學 (NTHU)</span>
-                <span class="en">National Tsing Hua University</span>
-              </p>
-              <div class="timeline-desc">
-                <ul class="zh">
-                  <li>擔任《運動心理學研究》、《身體活動認知神經科學研究》、《人體解剖生理學》課程助教。</li>
-                  <li>引導學術討論、設計解剖學實驗課程、批改報告，並協助學生掌握神經科學理論。</li>
-                </ul>
-                <ul class="en">
-                  <li>Served as TA for: "Research in Sport Psychology", "Cognitive Neuroscience in Physical Activity", and "Human Anatomy and Physiology".</li>
-                  <li>Led seminar discussions, managed laboratory classes, graded papers, and tutored students.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="glass-card timeline-card">
-              <div class="timeline-meta">
-                <span class="timeline-time">2022 - 2023</span>
-                <span class="timeline-tag"><span class="zh">運動防護</span><span class="en">Athletic Training</span></span>
-              </div>
-              <h3>
-                <span class="zh">運動防護實習生</span>
-                <span class="en">Student Athletic Trainer</span>
-              </h3>
-              <p class="timeline-subtitle">
-                <span class="zh">台中馬禮遜美國學校 (Morrison Academy Taichung)</span>
-                <span class="en">Morrison Academy Taichung</span>
-              </p>
-              <div class="timeline-desc">
-                <ul class="zh">
-                  <li>提供校隊運動員場邊緊急傷病處理、運動傷害評估、貼紮與急救。</li>
-                  <li>協助設計傷後漸進式復健與功能性體能重返運動計畫。</li>
-                </ul>
-                <ul class="en">
-                  <li>Provided pitch-side medical coverage, injury assessments, preventive taping, and therapeutic modalities.</li>
-                  <li>Co-developed progressive rehabilitation and return-to-play training programs for student-athletes.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="glass-card timeline-card">
-              <div class="timeline-meta">
-                <span class="timeline-time">2021 - 2022</span>
-                <span class="timeline-tag"><span class="zh">社團服務</span><span class="en">Leadership</span></span>
-              </div>
-              <h3>
-                <span class="zh">系學會財務長 & 服務隊文書長</span>
-                <span class="en">Finance Director & Document Director</span>
-              </h3>
-              <p class="timeline-subtitle">
-                <span class="zh">中國醫藥大學 運動醫學系</span>
-                <span class="en">Department of Sports Medicine, CMU</span>
-              </p>
-              <div class="timeline-desc">
-                <ul class="zh">
-                  <li>管理運動醫學系系學會全年度財務收支，編列活動預算與報銷審計。</li>
-                  <li>策劃與執行運動醫學健康服務隊營隊，推廣社區運動保健常識。</li>
-                </ul>
-                <ul class="en">
-                  <li>Audited the financial accounts, budgeted for student events, and compiled financial statements.</li>
-                  <li>Organized community-outreach sports medical camps to educate the public on injury prevention.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
         <!-- Education Timeline View -->
-        <div id="view-education" class="timeline-view">
+        <div id="view-education" class="timeline-view active">
           
           <div class="timeline-item">
             <div class="timeline-dot"></div>
@@ -476,6 +334,227 @@
             </div>
           </div>
 
+        </div>
+
+        <!-- Research Projects Timeline View -->
+        <div id="view-projects" class="timeline-view">
+          
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-time">2025 - 2026</span>
+                <span class="timeline-tag"><span class="zh">學術研究</span><span class="en">Research</span></span>
+              </div>
+              <h3>
+                <span class="zh">研究助理</span>
+                <span class="en">Research Assistant</span>
+              </h3>
+              <p class="timeline-subtitle">
+                <span class="zh">台北慈濟醫院研究計畫</span>
+                <span class="en">Taipei Tzu Chi Hospital Research Projects</span>
+              </p>
+              <div class="timeline-desc">
+                <ul class="zh">
+                  <li>負責協助臨床醫療與健康促進研究計畫之執行。</li>
+                  <li>收集臨床生理及認知數據，協助跨學科數據統合分析。</li>
+                </ul>
+                <ul class="en">
+                  <li>Assisted in clinical healthcare and health promotion research projects.</li>
+                  <li>Responsible for clinical data collection, processing, and multidisciplinary coordination.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-time">2022 - 2025</span>
+                <span class="timeline-tag"><span class="zh">國家專案</span><span class="en">National Projects</span></span>
+              </div>
+              <h3>
+                <span class="zh">研究助理</span>
+                <span class="en">Research Assistant</span>
+              </h3>
+              <p class="timeline-subtitle">
+                <span class="zh">國科會 (NSTC) 研究專案（清華大學 陳豐慈教授、姚在府教授實驗室）</span>
+                <span class="en">National Science and Technology Council (NSTC) Projects, Taiwan</span>
+              </p>
+              <div class="timeline-desc">
+                <ul class="zh">
+                  <li>參與多項國科會專案，主題涵蓋「阻力健身運動對高齡者執行功能之影響」。</li>
+                  <li>主導受試者招募、認知測量系統架設、生理數據採集與資料庫維護。</li>
+                </ul>
+                <ul class="en">
+                  <li>Participated in several national research grants on resistance exercise, hemodynamic changes, and executive functions in elderly and clinical populations.</li>
+                  <li>Spearheaded participant recruitment, cognitive battery setup, physiological assessment, and dataset preparation.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Teaching Timeline View -->
+        <div id="view-teaching" class="timeline-view">
+          
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-time">2024 - 2025</span>
+                <span class="timeline-tag"><span class="zh">教學服務</span><span class="en">Teaching</span></span>
+              </div>
+              <h3>
+                <span class="zh">課程助教 (TA)</span>
+                <span class="en">Teaching Assistant</span>
+              </h3>
+              <p class="timeline-subtitle">
+                <span class="zh">國立清華大學 (NTHU)</span>
+                <span class="en">National Tsing Hua University</span>
+              </p>
+              <div class="timeline-desc">
+                <ul class="zh">
+                  <li>擔任《運動心理學研究》、《身體活動認知神經科學研究》、《人體解剖生理學》課程助教。</li>
+                  <li>引導學術討論、設計解剖學實驗課程、批改報告，並協助學生掌握神經科學理論。</li>
+                </ul>
+                <ul class="en">
+                  <li>Served as TA for: "Research in Sport Psychology", "Cognitive Neuroscience in Physical Activity", and "Human Anatomy and Physiology".</li>
+                  <li>Led seminar discussions, managed laboratory classes, graded papers, and tutored students.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Practice & Service Timeline View -->
+        <div id="view-practice" class="timeline-view">
+          
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-time">2022 - 2023</span>
+                <span class="timeline-tag"><span class="zh">運動防護</span><span class="en">Athletic Training</span></span>
+              </div>
+              <h3>
+                <span class="zh">運動防護實習生</span>
+                <span class="en">Student Athletic Trainer</span>
+              </h3>
+              <p class="timeline-subtitle">
+                <span class="zh">台中馬禮遜美國學校 (Morrison Academy Taichung)</span>
+                <span class="en">Morrison Academy Taichung</span>
+              </p>
+              <div class="timeline-desc">
+                <ul class="zh">
+                  <li>提供校隊運動員場邊緊急傷病處理、運動傷害評估、貼紮與急救。</li>
+                  <li>協助設計傷後漸進式復健與功能性體能重返運動計畫。</li>
+                </ul>
+                <ul class="en">
+                  <li>Provided pitch-side medical coverage, injury assessments, preventive taping, and therapeutic modalities.</li>
+                  <li>Co-developed progressive rehabilitation and return-to-play training programs for student-athletes.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-time">2021 - 2022</span>
+                <span class="timeline-tag"><span class="zh">社團服務</span><span class="en">Leadership</span></span>
+              </div>
+              <h3>
+                <span class="zh">系學會財務長 & 服務隊文書長</span>
+                <span class="en">Finance Director & Document Director</span>
+              </h3>
+              <p class="timeline-subtitle">
+                <span class="zh">中國醫藥大學 運動醫學系</span>
+                <span class="en">Department of Sports Medicine, CMU</span>
+              </p>
+              <div class="timeline-desc">
+                <ul class="zh">
+                  <li>管理運動醫學系系學會全年度財務收支，編列活動預算與報銷審計。</li>
+                  <li>策劃與執行運動醫學健康服務隊營隊，推廣社區運動保健常識。</li>
+                </ul>
+                <ul class="en">
+                  <li>Audited the financial accounts, budgeted for student events, and compiled financial statements.</li>
+                  <li>Organized community-outreach sports medical camps to educate the public on injury prevention.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academic Services & Affiliations -->
+  <section id="academic-services" class="reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><span class="zh">學術社群</span><span class="en">Academic Community</span></span>
+        <h2 class="section-title">
+          <span class="zh">學術服務與組織會員</span>
+          <span class="en">Academic Services & Affiliations</span>
+        </h2>
+      </div>
+      <div class="services-grid">
+        <!-- Editorial Assistant Card -->
+        <div class="glass-card service-card">
+          <div class="service-icon"><i class="fa-solid fa-feather-pointed"></i></div>
+          <h3>
+            <span class="zh">期刊編輯助理</span>
+            <span class="en">Editorial Assistant</span>
+          </h3>
+          <p class="service-org">
+            <span class="zh">《運動表現期刊》(Journal of Sports Performance)</span>
+            <span class="en">Journal of Sports Performance</span>
+          </p>
+          <span class="service-time">2024 - 2026</span>
+          <p class="service-desc">
+            <span class="zh">協助稿件初審、送審與同儕審查流程管理，促進學術對話。</span>
+            <span class="en">Managed peer-review processes, manuscript formatting checks, and reviewer communication.</span>
+          </p>
+        </div>
+        <!-- Honor Society Card -->
+        <div class="glass-card service-card">
+          <div class="service-icon"><i class="fa-solid fa-award"></i></div>
+          <h3>
+            <span class="zh">斐陶斐榮譽學會 會員</span>
+            <span class="en">Honor Society Member</span>
+          </h3>
+          <p class="service-org">
+            <span class="zh">中華民國斐陶斐榮譽學會</span>
+            <span class="en">The Phi Tau Phi Scholastic Honor Society</span>
+          </p>
+          <span class="service-time">2025 - Present</span>
+          <p class="service-desc">
+            <span class="zh">代表學術卓越與品德優良，由國立清華大學推薦入會。</span>
+            <span class="en">Inducted for scholastic excellence, recommended by National Tsing Hua University.</span>
+          </p>
+        </div>
+        <!-- Professional Membership Card -->
+        <div class="glass-card service-card">
+          <div class="service-icon"><i class="fa-solid fa-users"></i></div>
+          <h3>
+            <span class="zh">專業學會會員</span>
+            <span class="en">Society Memberships</span>
+          </h3>
+          <p class="service-org">
+            <span class="zh">台灣運動心理學會 / 認知神經科學學會</span>
+            <span class="en">SSEPT / Cognitive Neuroscience Society</span>
+          </p>
+          <span class="service-time">2022 - Present</span>
+          <p class="service-desc">
+            <span class="zh">積極參與國內外運動心理學與認知神經科學學術研討會。</span>
+            <span class="en">Active participant in sports psychology and cognitive neuroscience academic communities.</span>
+          </p>
         </div>
       </div>
     </div>
@@ -1270,6 +1349,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=1.0.2"></script>
+  <script src="script.js?v=1.0.3"></script>
 </body>
 </html>

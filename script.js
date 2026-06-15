@@ -57,26 +57,28 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // --- TIMELINE TOGGLER ---
-  const btnExp = document.getElementById('toggle-exp');
-  const btnEdu = document.getElementById('toggle-edu');
-  const viewExp = document.getElementById('view-experience');
-  const viewEdu = document.getElementById('view-education');
+  const toggleItems = document.querySelectorAll('.timeline-toggle-container .toggle-item');
+  const timelineViews = document.querySelectorAll('.timeline-wrap .timeline-view');
 
-  if (btnExp && btnEdu && viewExp && viewEdu) {
-    btnExp.addEventListener('click', () => {
-      btnExp.classList.add('active');
-      btnEdu.classList.remove('active');
-      viewExp.classList.add('active');
-      viewEdu.classList.remove('active');
-    });
+  toggleItems.forEach(item => {
+    item.addEventListener('click', () => {
+      // Remove active class from all toggle items
+      toggleItems.forEach(btn => btn.classList.remove('active'));
+      // Add active class to clicked item
+      item.classList.add('active');
 
-    btnEdu.addEventListener('click', () => {
-      btnEdu.classList.add('active');
-      btnExp.classList.remove('active');
-      viewEdu.classList.add('active');
-      viewExp.classList.remove('active');
+      const targetId = item.getAttribute('data-target');
+      
+      // Hide all views and show target view
+      timelineViews.forEach(view => {
+        if (view.id === targetId) {
+          view.classList.add('active');
+        } else {
+          view.classList.remove('active');
+        }
+      });
     });
-  }
+  });
 
   // --- PUBLICATIONS FILTER ---
   const filterBtns = document.querySelectorAll('.pub-filter-btn');
