@@ -6,7 +6,7 @@
   <title>Ting-Ting Wu (吳亭葶) | Cognitive Neuroscience & Kinesiology Portfolio</title>
   <meta name="description" content="Personal Portfolio of Ting-Ting Wu (吳亭葶) - Ph.D. Student at Institute of Cognitive Neuroscience, National Central University. Intersecting Cognitive Neuroscience, Kinesiology, and Athletic Training.">
   <meta name="keywords" content="Ting-Ting Wu, 吳亭葶, Cognitive Neuroscience, Kinesiology, Athletic Trainer, National Central University, Sports Medicine">
-  <link rel="stylesheet" href="style.css?v=1.0.6">
+  <link rel="stylesheet" href="style.css?v=1.0.7">
   <!-- FontAwesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -66,6 +66,7 @@
           <span class="zh">連結<strong>認知神經科學</strong>、<strong>運動科學</strong>與<strong>運動傷害防護</strong>，致力於探討身體活動與健身運動對大腦與情緒的神經調控機制，進而改善全年齡層與特殊族群的身心大腦健康。</span>
           <span class="en">Bridging the gap between <strong>Cognitive Neuroscience</strong>, <strong>Kinesiology</strong>, and <strong>Athletic Training</strong>. I investigate the neural mechanisms of physical activity and exercise on brain and emotion to optimize mind and brain health for all age groups and special populations.</span>
         </p>
+
         <div class="hero-stats">
           <div class="stat-item">
             <span class="stat-num">9+</span>
@@ -89,6 +90,7 @@
             </span>
           </div>
         </div>
+
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary">
             <span class="zh">聯絡我 <i class="fa-solid fa-paper-plane"></i></span>
@@ -245,19 +247,19 @@
 
       <div class="timeline-toggle-container">
         <div class="toggle-group">
-          <button class="toggle-item active" data-target="view-education">
+          <button id="toggle-edu" class="toggle-item active" data-target="view-education">
             <span class="zh">教育背景</span>
             <span class="en">Education</span>
           </button>
-          <button class="toggle-item" data-target="view-projects">
+          <button id="toggle-proj" class="toggle-item" data-target="view-projects">
             <span class="zh">參與計畫</span>
             <span class="en">Research Projects</span>
           </button>
-          <button class="toggle-item" data-target="view-teaching">
+          <button id="toggle-teach" class="toggle-item" data-target="view-teaching">
             <span class="zh">教學服務</span>
             <span class="en">Teaching</span>
           </button>
-          <button class="toggle-item" data-target="view-practice">
+          <button id="toggle-practice" class="toggle-item" data-target="view-practice">
             <span class="zh">專業實務</span>
             <span class="en">Practice & Service</span>
           </button>
@@ -718,21 +720,24 @@
       <div class="section-header">
         <span class="section-tag"><span class="zh">研究產出</span><span class="en">Research Outputs</span></span>
         <h2 class="section-title">
-          <span class="zh">學術期刊論文</span>
-          <span class="en">Journal Publications</span>
+          <span class="zh">學術著作與研討會</span>
+          <span class="en">Publications & Conferences</span>
         </h2>
       </div>
 
       <!-- Filters -->
       <div class="pub-filter-bar">
         <button class="pub-filter-btn active" data-filter="all">
-          <span class="zh">全部期刊</span><span class="en">All (9)</span>
+          <span class="zh">全部著作</span><span class="en">All (23)</span>
         </button>
         <button class="pub-filter-btn" data-filter="int-journal">
           <span class="zh">國際期刊</span><span class="en">Int'l Journals</span>
         </button>
         <button class="pub-filter-btn" data-filter="dom-journal">
           <span class="zh">國內期刊</span><span class="en">Domestic Journals</span>
+        </button>
+        <button class="pub-filter-btn" data-filter="conference">
+          <span class="zh">研討會發表</span><span class="en">Conferences</span>
         </button>
       </div>
 
@@ -907,6 +912,264 @@
               <span class="pub-tag">Cognitive Function</span>
             </div>
           </div>
+        </div>
+
+        <!-- Conference 1 -->
+        <div class="glass-card pub-card" data-type="conference">
+          <div class="pub-type"><i class="fa-solid fa-comments"></i> Conference Presentation (Oral)</div>
+          <h3 class="pub-title">The effects of volume-matched acute resistance exercise on planning-related executive function in older adults.</h3>
+          <div class="pub-authors"><strong>Wu, T.-T.</strong>, & Chen, F.-T. (2025, January 19–22).</div>
+          <div class="pub-meta">
+            <span class="pub-journal">12th International Seminar of Sport and Exercise Psychology, USM, Malaysia.</span>
+            <div class="pub-tags">
+              <span class="pub-tag award"><i class="fa-solid fa-trophy"></i> Best Oral Presentation</span>
+              <span class="pub-tag">Resistance Exercise</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conference 2 -->
+        <div class="glass-card pub-card" data-type="conference">
+          <div class="pub-type"><i class="fa-solid fa-comments"></i> Conference Presentation (Poster)</div>
+          <h3 class="pub-title">Effects of volume-matched acute resistance exercise on inhibitory control in older adults.</h3>
+          <div class="pub-authors"><strong>Wu, T.-T.</strong>, Wang, S.-C., Chiang, C.-Y., Yao, Z.-F. & Chen, F.-T. (2025, December 8–12).</div>
+          <div class="pub-meta">
+            <span class="pub-journal">The 16th ISSP World Congress, Hong Kong, China.</span>
+            <div class="pub-tags">
+              <span class="pub-tag">Inhibitory Control</span>
+              <span class="pub-tag">ISSP 2025</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conference 3 -->
+        <div class="glass-card pub-card" data-type="conference">
+          <div class="pub-type"><i class="fa-solid fa-comments"></i> Conference Presentation (Poster)</div>
+          <h3 class="pub-title">The effect of volume-matched acute resistance exercise on metacognition-related executive function in older adults.</h3>
+          <div class="pub-authors">Chen, F.-T., <strong>Wu, T.-T.</strong>, Chiang, C.-Y., & Wang, S.-C. (2025, December 8–12).</div>
+          <div class="pub-meta">
+            <span class="pub-journal">The 16th ISSP World Congress, Hong Kong, China.</span>
+            <div class="pub-tags">
+              <span class="pub-tag">Metacognition</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conference 4 -->
+        <div class="glass-card pub-card" data-type="conference">
+          <div class="pub-type"><i class="fa-solid fa-comments"></i> Conference Presentation (Poster)</div>
+          <h3 class="pub-title">The effects of acute high-intensity interval exercise with social interaction on planning-related executive function: A preliminary study.</h3>
+          <div class="pub-authors">Tung, S.-Y., <strong>Wu, T.-T.</strong>, Cheng Y.-X., & Chen, F.-T. (2025, December 8–12).</div>
+          <div class="pub-meta">
+            <span class="pub-journal">The 16th ISSP World Congress, Hong Kong, China.</span>
+            <div class="pub-tags">
+              <span class="pub-tag">HIIT</span>
+              <span class="pub-tag">Social Interaction</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conference 5 -->
+        <div class="glass-card pub-card" data-type="conference">
+          <div class="pub-type"><i class="fa-solid fa-comments"></i> Conference Presentation (Poster)</div>
+          <h3 class="pub-title">Effect of exergaming on cognitive function in older adults: A systematic review.</h3>
+          <div class="pub-authors">Liang, H.-Y., <strong>Wu, T.-T.</strong>, Chiang, C.-Y., & Chen, F.-T. (2025, May 24–25).</div>
+          <div class="pub-meta">
+            <span class="pub-journal">International Masters Games Conference, Taipei, Taiwan.</span>
+            <div class="pub-tags">
+              <span class="pub-tag">Exergaming</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conference 6 -->
+        <div class="glass-card pub-card" data-type="conference">
+          <div class="pub-type"><i class="fa-solid fa-comments"></i> Conference Presentation (Poster)</div>
+          <h3 class="pub-title">Cross-sectional impact of physical activity and sedentary behavior on executive function in older adults.</h3>
+          <div class="pub-authors">Chen, F.-T., Chen, H.-Y., Hung, C.-S., <strong>Wu, T.-T.</strong> (2024, July 15–19).</div>
+          <div class="pub-meta">
+            <span class="pub-journal">FEPSAC Congress 2024, Innsbruck, Austria.</span>
+            <div class="pub-tags">
+              <span class="pub-tag">Sedentary Behavior</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conference 7 -->
+        <div class="glass-card pub-card" data-type="conference">
+          <div class="pub-type"><i class="fa-solid fa-comments"></i> Conference Presentation (Poster)</div>
+          <h3 class="pub-title">Effects of exercise types on white matter microstructure in late midlife adults: A diffusion tensor imaging study.</h3>
+          <div class="pub-authors">Chen, F.-T., Chen, L.-T., <strong>Wu, T.-T.</strong> (2023, February 9–10).</div>
+          <div class="pub-meta">
+            <span class="pub-journal">10th International Seminar of Sport and Exercise Psychology, Thailand.</span>
+            <div class="pub-tags">
+              <span class="pub-tag">DTI</span>
+              <span class="pub-tag">White Matter</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conference 8 -->
+        <div class="glass-card pub-card" data-type="conference">
+          <div class="pub-type"><i class="fa-solid fa-comments"></i> Conference Presentation (Poster)</div>
+          <h3 class="pub-title">
+            <span class="zh">Body Composition, Emotion, and Cognitive Function in College Students: A Cross-Sectional Analysis</span>
+            <span class="en">Body Composition, Emotion, and Cognitive Function in College Students: A Cross-Sectional Analysis</span>
+          </h3>
+          <div class="pub-authors">
+            <span class="zh"><strong>吳亭葶</strong>、陳宇倫、阮啟弘 (2026，01月24日)。</span>
+            <span class="en"><strong>Wu, T.-T.</strong>, Chen, Y.-L., & Juan, C.-H. (2026, January 24).</span>
+          </div>
+          <div class="pub-meta">
+            <span class="pub-journal">
+              <span class="zh">115 年全國大專校院運動會「運動科學與全民運動健康促進」學術研討會，桃園，臺灣。</span>
+              <span class="en">115 National Intercollegiate Athletic Games "Sports Science and Physical Fitness Health Promotion" Academic Seminar, Taoyuan, Taiwan.</span>
+            </span>
+            <div class="pub-tags">
+              <span class="pub-tag">Body Composition</span>
+              <span class="pub-tag">Emotion</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conference 9 -->
+        <div class="glass-card pub-card" data-type="conference">
+          <div class="pub-type"><i class="fa-solid fa-comments"></i> Conference Presentation (Oral)</div>
+          <h3 class="pub-title">
+            <span class="zh">急性阻力健身運動訓練量對高齡者抑制控制之影響</span>
+            <span class="en">Effects of acute resistance exercise volume on inhibitory control in older adults</span>
+          </h3>
+          <div class="pub-authors">
+            <span class="zh"><strong>吳亭葶</strong>、江巧羽、王上杰、陳豐慈 (2024，11月24日)。</span>
+            <span class="en"><strong>Wu, T.-T.</strong>, Chiang, C.-Y., Wang, S.-C., & Chen, F.-T. (2024, November 24).</span>
+          </div>
+          <div class="pub-meta">
+            <span class="pub-journal">
+              <span class="zh">台灣運動心理學會年會暨學術研討會：AI時代心理健康的議題：運動心理學的挑戰，彰化，臺灣。</span>
+              <span class="en">Annual Conference of Society for Sport Psychology of Taiwan, Changhua, Taiwan.</span>
+            </span>
+            <div class="pub-tags">
+              <span class="pub-tag">Resistance Exercise</span>
+              <span class="pub-tag">Inhibitory Control</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conference 10 -->
+        <div class="glass-card pub-card" data-type="conference">
+          <div class="pub-type"><i class="fa-solid fa-comments"></i> Conference Presentation (Poster)</div>
+          <h3 class="pub-title">
+            <span class="zh">聽覺障礙青少年身體活動量與計畫相關執行功能之關聯</span>
+            <span class="en">Association between physical activity level and planning-related executive function in deaf adolescents</span>
+          </h3>
+          <div class="pub-authors">
+            <span class="zh">江巧羽、<strong>吳亭葶</strong>、王上杰、陳豐慈 (2024，11月24日)。</span>
+            <span class="en">Chiang, C.-Y., <strong>Wu, T.-T.</strong>, Wang, S.-C., & Chen, F.-T. (2024, November 24).</span>
+          </div>
+          <div class="pub-meta">
+            <span class="pub-journal">
+              <span class="zh">台灣運動心理學會年會暨學術研討會：AI時代心理健康的議題：運動心理學的挑戰，彰化，臺灣。</span>
+              <span class="en">Annual Conference of Society for Sport Psychology of Taiwan, Changhua, Taiwan.</span>
+            </span>
+            <div class="pub-tags">
+              <span class="pub-tag award"><i class="fa-solid fa-trophy"></i> 最佳海報發表 / Best Poster Award</span>
+              <span class="pub-tag">Deaf Adolescents</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conference 11 -->
+        <div class="glass-card pub-card" data-type="conference">
+          <div class="pub-type"><i class="fa-solid fa-comments"></i> Conference Presentation (Poster)</div>
+          <h3 class="pub-title">
+            <span class="zh">傳統式與血流限制阻力健身運動對計畫執行功能之影響</span>
+            <span class="en">Effects of traditional and blood flow restriction resistance exercise on planning-related executive function</span>
+          </h3>
+          <div class="pub-authors">
+            <span class="zh"><strong>吳亭葶</strong>、洪辰歆、陳豐慈 (2023，12月3日)。</span>
+            <span class="en"><strong>Wu, T.-T.</strong>, Hung, C.-S., & Chen, F.-T. (2023, December 3).</span>
+          </div>
+          <div class="pub-meta">
+            <span class="pub-journal">
+              <span class="zh">台灣運動心理學會年會暨學術研討會：運動心理學理論與實務的結合：心理健康和全人幸福，臺中，臺灣。</span>
+              <span class="en">Annual Conference of Society for Sport Psychology of Taiwan, Taichung, Taiwan.</span>
+            </span>
+            <div class="pub-tags">
+              <span class="pub-tag award"><i class="fa-solid fa-trophy"></i> 最佳海報發表 / Best Poster Award</span>
+              <span class="pub-tag">Blood Flow Restriction</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conference 12 -->
+        <div class="glass-card pub-card" data-type="conference">
+          <div class="pub-type"><i class="fa-solid fa-comments"></i> Conference Presentation (Poster)</div>
+          <h3 class="pub-title">
+            <span class="zh">血流限制訓練對執行功能之影響：文獻回顧</span>
+            <span class="en">Effects of blood flow restriction training on executive function: A review</span>
+          </h3>
+          <div class="pub-authors">
+            <span class="zh"><strong>吳亭葶</strong>、陳宏瑜、陳律仰、陳豐慈 (2022，10月23日)。</span>
+            <span class="en"><strong>Wu, T.-T.</strong>, Chen, H.-Y., Chen, L.-Y., & Chen, F.-T. (2022, October 23).</span>
+          </div>
+          <div class="pub-meta">
+            <span class="pub-journal">
+              <span class="zh">台灣運動心理學會年會暨學術研討會：運動心理學在後疫情時代之角色，臺北，臺灣。</span>
+              <span class="en">Annual Conference of Society for Sport Psychology of Taiwan, Taipei, Taiwan.</span>
+            </span>
+            <div class="pub-tags">
+              <span class="pub-tag">Blood Flow Restriction</span>
+              <span class="pub-tag">Literature Review</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conference 13 -->
+        <div class="glass-card pub-card" data-type="conference">
+          <div class="pub-type"><i class="fa-solid fa-comments"></i> Conference Presentation (Poster)</div>
+          <h3 class="pub-title">
+            <span class="zh">身體活動對乳房癌症患者執行功能之影響：文獻回顧</span>
+            <span class="en">Effects of physical activity on executive function in breast cancer patients: A review</span>
+          </h3>
+          <div class="pub-authors">
+            <span class="zh">洪辰歆、<strong>吳亭葶</strong>、陳玨縈、陳豐慈 (2022，10月23日)。</span>
+            <span class="en">Hung, C.-S., <strong>Wu, T.-T.</strong>, Chen, J.-Y., & Chen, F.-T. (2022, October 23).</span>
+          </div>
+          <div class="pub-meta">
+            <span class="pub-journal">
+              <span class="zh">台灣運動心理學會年會暨學術研討會：運動心理學在後疫情時代之角色，臺北，臺灣。</span>
+              <span class="en">Annual Conference of Society for Sport Psychology of Taiwan, Taipei, Taiwan.</span>
+            </span>
+            <div class="pub-tags">
+              <span class="pub-tag">Breast Cancer</span>
+              <span class="pub-tag">Literature Review</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conference 14 -->
+        <div class="glass-card pub-card" data-type="conference">
+          <div class="pub-type"><i class="fa-solid fa-comments"></i> Conference Presentation (Oral)</div>
+          <h3 class="pub-title">
+            <span class="zh">單次運動按摩對射箭表現之影響：執行功能之調節角色</span>
+            <span class="en">Effect of single-session sports massage on archery performance: The moderating role of executive function</span>
+          </h3>
+          <div class="pub-authors">
+            <span class="zh">陳律仰、<strong>吳亭葶</strong>、林承佑、黃彥寧、陳豐慈 (2022，10月23日)。</span>
+            <span class="en">Chen, L.-Y., <strong>Wu, T.-T.</strong>, Lin, C.-Y., Huang, Y.-N., & Chen, F.-T. (2022, October 23).</span>
+          </div>
+          <div class="pub-meta">
+            <span class="pub-journal">
+              <span class="zh">台灣運動心理學會年會暨學術研討會：運動心理學在後疫情時代之角色，臺北，臺灣。</span>
+              <span class="en">Annual Conference of Society for Sport Psychology of Taiwan, Taipei, Taiwan.</span>
+            </span>
+            <div class="pub-tags">
+              <span class="pub-tag">Sports Massage</span>
+              <span class="pub-tag">Archery</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -1050,6 +1313,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=1.0.6"></script>
+  <script src="script.js?v=1.0.7"></script>
 </body>
 </html>
