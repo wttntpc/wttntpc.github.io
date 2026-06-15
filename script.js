@@ -144,20 +144,25 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- SCROLL REVEAL ON SCROLL ---
   const revealElements = document.querySelectorAll('.reveal');
   
-  const revealObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-        // Stop observing once animation triggers to keep page stable
-        observer.unobserve(entry.target);
-      }
+  if (!window.IntersectionObserver) {
+    // Fallback for older browsers or restricted webviews
+    revealElements.forEach(el => el.classList.add('active'));
+  } else {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          // Stop observing once animation triggers to keep page stable
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
     });
-  }, {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-  });
 
-  revealElements.forEach(el => revealObserver.observe(el));
+    revealElements.forEach(el => revealObserver.observe(el));
+  }
 
   // --- COPY EMAIL FUNCTIONALITY ---
   const btnCopy = document.getElementById('btn-copy');
@@ -203,4 +208,40 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // --- MOBILE MENU TOGGLE ---
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinksContainer = document.querySelector('.nav-links');
+  const navLinksItems = document.querySelectorAll('.nav-links a');
+
+  if (menuToggle && navLinksContainer) {
+    menuToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      navLinksContainer.classList.toggle('show');
+      const icon = menuToggle.querySelector('i');
+      if (navLinksContainer.classList.contains('show')) {
+        icon.className = 'fa-solid fa-xmark';
+      } else {
+        icon.className = 'fa-solid fa-bars';
+      }
+    });
+
+    // Close menu when clicking a link
+    navLinksItems.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinksContainer.classList.remove('show');
+        const icon = menuToggle.querySelector('i');
+        if (icon) icon.className = 'fa-solid fa-bars';
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!navLinksContainer.contains(e.target) && !menuToggle.contains(e.target)) {
+        navLinksContainer.classList.remove('show');
+        const icon = menuToggle.querySelector('i');
+        if (icon) icon.className = 'fa-solid fa-bars';
+      }
+    });
+  }
 });

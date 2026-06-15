@@ -76,6 +76,11 @@ h1, h2, h3, h4, h5, h6 {
 body.lang-zh .en { display: none !important; }
 body.lang-en .zh { display: none !important; }
 
+/* Mobile only helper class */
+.mobile-only {
+  display: none !important;
+}
+
 /* Scroll Animation Utilities */
 .reveal {
   opacity: 0;
@@ -1110,12 +1115,59 @@ footer {
 }
 
 @media (max-width: 768px) {
+  /* Disable scroll reveal on mobile to prevent empty/invisible sections due to intersection observer limitations */
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .mobile-only {
+    display: flex !important;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: var(--bg-color);
+    border-bottom: 1px solid var(--card-border);
+    flex-direction: column;
+    gap: 0 !important;
+    padding: 16px 24px;
+    box-shadow: var(--shadow);
+  }
+
+  .nav-links.show {
+    display: flex !important;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: left;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 12px 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  [data-theme="light"] .nav-links a {
+    border-bottom-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-links li:last-child a {
+    border-bottom: none;
+  }
+
   .hero h1 {
     font-size: 3rem;
   }
-  .nav-links {
-    display: none; /* simple responsive nav helper: could add mobile drawer if needed, but for portfolio links are usually fine or simplified */
-  }
+  
   .contact-card {
     padding: 32px 20px;
   }
